@@ -1,0 +1,13 @@
+.hero{
+    width:100vw;
+    height:270px;
+    background-color: var(--css-black);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.hero-img{
+    width:799px;
+    height:212px;
+}
