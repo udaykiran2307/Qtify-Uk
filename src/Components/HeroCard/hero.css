@@ -1,13 +1,33 @@
-.hero{
-    width:100vw;
-    height:270px;
-    background-color: var(--css-black);
+.hero-content{
     display:flex;
     justify-content: center;
     align-items:center;
+    width:100vw;
+    height:270px;
+    background-color: var(--css-black);
+   
+}
+
+.hero-content-txt{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    color:var(--css-white);
+    /* font-weight: 500;
+    font-size:30px; */
+    
+}
+
+.hero-content-img-frame{
+    width:212px;
+    height:212px;
 }
 
 .hero-img{
-    width:799px;
-    height:212px;
+    height:100%;
+    width:100%;
 }
+
+
