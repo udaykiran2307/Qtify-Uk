@@ -1,10 +1,12 @@
 // import logo from './Assets/logo.svg';
+import { useState, useEffect } from "react";
+import axios from "axios";
 import "./styles/App.css";
 import Navbar from "./Components/Navbar";
 import HeroSection from "./Components/HeroCard";
 import CardSection from "./Components/Card-Section";
-import { useState, useEffect } from "react";
-import axios from "axios";
+import SongSection from "./Components/SongSection";
+
 
 const QTIFY_URL = "https://qtify-backend-labs.crio.do";
 
@@ -32,6 +34,8 @@ function App() {
       <HeroSection />
       <CardSection cardData={topAlbums} album={"Top Albums"} />
       <CardSection cardData={newAlbums} album={"New Albums"} />
+      <SongSection/>
+
     </div>
   );
 }

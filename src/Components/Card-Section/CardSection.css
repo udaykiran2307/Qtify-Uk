@@ -10,6 +10,6 @@
 .card-section{
     display: flex;
     flex-wrap: wrap;
-    gap:42px;
-    
+    gap:42px;  
 }
+

@@ -1,0 +1,25 @@
+.line {
+  width: 100%;
+  border-color: var(--css-primary);
+  margin-bottom:1rem;
+}
+.song-section{
+    padding:10px 32px;
+    color:var(--css-white);
+}
+.tabs{
+    color:var(--css-white);
+}
+
+.css-1h9z7r5-MuiButtonBase-root-MuiTab-root{
+    color:var(--css-white)!important;
+}
+.css-1aquho2-MuiTabs-indicator{
+    background-color: var(--css-primary)!important;
+}
+.filtered-song-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap:42px;  
+    margin-top:1rem;
+}
