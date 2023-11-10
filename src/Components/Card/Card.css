@@ -3,7 +3,7 @@
     flex-direction: column;
     width:159px;
     height:232px;
-    margin:20px;
+   
     
 }
 
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height:205px;
     width:100%;
     background-color: var(--css-white);
@@ -24,6 +24,7 @@
     width:100%;
     overflow: hidden;
     border-radius: 10px 10px 0px 0px;
+    
 }
 
 .follow-text{
@@ -35,7 +36,7 @@
     text-align: center;
     padding: 4px;
     border-radius: 8px;
-    margin-left: 4px;
+    margin: 4px;
 }
 
 .card-tile-name{

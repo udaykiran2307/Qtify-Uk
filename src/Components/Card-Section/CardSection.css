@@ -1,0 +1,15 @@
+.section{
+    padding:10px 32px;
+    color:var(--css-white);
+   
+}
+.section-head{
+    margin-top:8px;
+    margin-bottom:8px;
+}
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap:42px;
+    
+}
