@@ -1,7 +1,7 @@
 .section{
     padding:10px 32px;
     color:var(--css-white);
-   
+    
 }
 .section-head{
     margin-top:8px;
@@ -11,5 +11,15 @@
     display: flex;
     flex-wrap: wrap;
     gap:42px;  
+}
+.section-top{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+.section-button{
+ 
+   
 }
 

@@ -26,7 +26,7 @@ export default () => {
   const [allSongsData, setAllSongsData] = useState([]);
   const songSelectionArray = ["All", "Rock", "Pop", "Jazz", "Blues"];
 
-  const FilteredData = (data) => {
+  const FilteredData = () => {
     if (value === 0) {
       setCurSongsData(allSongsData);
       return;
@@ -43,7 +43,7 @@ export default () => {
   };
 
   useEffect(() => {
-    FilteredData(allSongsData);
+    FilteredData();
     console.log(curSongsData);
   }, [value]);
 

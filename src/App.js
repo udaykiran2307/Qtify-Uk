@@ -6,7 +6,7 @@ import Navbar from "./Components/Navbar";
 import HeroSection from "./Components/HeroCard";
 import CardSection from "./Components/Card-Section";
 import SongSection from "./Components/SongSection";
-
+import FaqSection from "./Components/FAQ"
 
 const QTIFY_URL = "https://qtify-backend-labs.crio.do";
 
@@ -35,7 +35,7 @@ function App() {
       <CardSection cardData={topAlbums} album={"Top Albums"} />
       <CardSection cardData={newAlbums} album={"New Albums"} />
       <SongSection/>
-
+      <FaqSection/>
     </div>
   );
 }
