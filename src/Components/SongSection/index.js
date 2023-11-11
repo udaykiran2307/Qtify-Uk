@@ -4,17 +4,19 @@ import Navigation from "./navigation";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Card from "../Card";
+import Carousel from "../Carousels"
 const FilteredSong = ({ curSongsData }) => {
   return (
     <div className="filtered-song-section">
-      {curSongsData.map((data) => (
+      {/* {curSongsData.map((data) => (
         <Card
           key={data.id}
           imageSrc={data.image}
           likes={data.likes}
           label={data.title}
         />
-      ))}
+      ))} */}
+        <Carousel data={curSongsData} />
     </div>
   );
 };

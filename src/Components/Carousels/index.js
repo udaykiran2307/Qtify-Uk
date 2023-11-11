@@ -1,33 +1,42 @@
-
 import React from 'react';
-import { Navigation, Pagination } from 'swiper/core';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Card from '../Card'
-import 'swiper/swiper-bundle.css';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import Card from '../Card';
+import './Carousel.css'
+const Carousel = ({ data }) => {
+  // Check if data is undefined
+  if (!data || data.length === 0) {
+    return <p>No data available</p>; // You can customize this message
+  }
 
-
-export default function App({data}) {
   return (
-    <>
-      <Swiper
-        modules={[Navigation, Pagination]}
-        slidesPerView={7}
-        centeredSlides={true}
-        spaceBetween={30}
-        navigation={true}
-      >
-        {data.map((e) => (
-          <SwiperSlide key={e.id}>
-             <Card
-              key={e.id}
-              imageSrc={e.image}
-              followersCount={e.follows}
-              label={e.title}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </>
+    <Swiper
+      modules={[Navigation, Pagination, Scrollbar, A11y]}
+      spaceBetween={50}
+      slidesPerView={7}
+      navigation
+      onSwiper={(swiper) => console.log(swiper)}
+      onSlideChange={() => console.log('slide change')}
+    >
+      {data.map((item) => (
+        <SwiperSlide key={item.id}>
+          <Card
+            key={item.id}
+            imageSrc={item.image}
+            followersCount={item.follows}
+            label={item.title}
+          />
+        </SwiperSlide>
+      ))}
+    </Swiper>
   );
-}
+};
+
+export default Carousel;
+
+
 
