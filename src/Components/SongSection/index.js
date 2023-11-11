@@ -16,7 +16,7 @@ const FilteredSong = ({ curSongsData }) => {
           label={data.title}
         />
       ))} */}
-        <Carousel data={curSongsData} />
+        <Carousel data={curSongsData} type={'songs'}/>
     </div>
   );
 };

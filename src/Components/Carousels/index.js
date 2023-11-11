@@ -7,7 +7,7 @@ import 'swiper/css/scrollbar';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import Card from '../Card';
 import './Carousel.css'
-const Carousel = ({ data }) => {
+const Carousel = ({ data, type }) => {
   // Check if data is undefined
   if (!data || data.length === 0) {
     return <p>No data available</p>; // You can customize this message
@@ -22,15 +22,25 @@ const Carousel = ({ data }) => {
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log('slide change')}
     >
-      {data.map((item) => (
+      { type ==='songs' ? data.map((item) => (
         <SwiperSlide key={item.id}>
           <Card
             key={item.id}
             imageSrc={item.image}
-            followersCount={item.follows}
+            likes={item.likes} 
             label={item.title}
           />
-        </SwiperSlide>
+        </SwiperSlide>)):
+        data.map((item) => (
+         <SwiperSlide key={item.id}>
+         <Card
+           key={item.id}
+           imageSrc={item.image}
+           followersCount={item.follows}
+           label={item.title}
+         />
+       </SwiperSlide>
+
       ))}
     </Swiper>
   );
