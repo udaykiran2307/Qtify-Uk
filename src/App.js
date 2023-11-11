@@ -7,7 +7,7 @@ import HeroSection from "./Components/HeroCard";
 import CardSection from "./Components/Card-Section";
 import SongSection from "./Components/SongSection";
 import FaqSection from "./Components/FAQ"
-
+import Carousel from "./Components/Carousels"
 const QTIFY_URL = "https://qtify-backend-labs.crio.do";
 
 function App() {
@@ -36,6 +36,8 @@ function App() {
       <CardSection cardData={newAlbums} album={"New Albums"} />
       <SongSection/>
       <FaqSection/>
+      <Carousel/>
+      
     </div>
   );
 }

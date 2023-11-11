@@ -1,46 +1,69 @@
 /* eslint-disable import/no-anonymous-default-export */
 import "./faq.css";
-import * as React from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import * as React from "react";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
- function BasicAccordion() {
+function BasicAccordion() {
   return (
     <div>
       <Accordion
-       sx={{ borderColor:'white',border:'200px'}}
+        sx={{
+          border: "2px ",
+          borderColor: "#34C94B",
+          padding: "2px",
+          marginBottom: "1rem",
+          borderRadius: "8px",
+          width: "1113px",
+        }}
       >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
-          sx={{backgroundColor:'#121212' , color:'#FFFFFF', fontFamily:'Poppins', m:'2px'}}
+          sx={{
+            backgroundColor: "#121212",
+            color: "#FFFFFF",
+            fontFamily: "Poppins",
+            borderRadius: "8px",
+          }}
         >
-          <Typography>Accordion 1</Typography>
+          <Typography>Is QTify free to use?</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
-          </Typography>
+          <Typography>Yes! It is 100% free, and has 0% ads!</Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+
+      <Accordion
+        sx={{
+          border: "2px ",
+          borderColor: "#34C94B",
+          padding: "2px",
+          marginBottom: "1rem",
+          borderRadius: "8px",
+        }}
+      >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
           id="panel2a-header"
-          sx={{backgroundColor:'#121212' , color:'#FFFFFF', fontFamily:'Poppins'}}
+          sx={{
+            backgroundColor: "#121212",
+            color: "#FFFFFF",
+            fontFamily: "Poppins",
+            borderRadius: "8px",
+          }}
         >
-          <Typography>Accordion 2</Typography>
+          <Typography>Can I download and listen to songs offline?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Sorry, unfortunately we don't provide the service to download any
+            songs.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -48,12 +71,11 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
   );
 }
 
-
 export default () => {
   return (
     <div className="faq-section">
-      <h1>FAQ</h1>
-      <BasicAccordion/>
+      <h1>FAQs</h1>
+      <BasicAccordion />
     </div>
   );
 };

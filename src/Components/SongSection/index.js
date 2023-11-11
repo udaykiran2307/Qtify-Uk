@@ -11,7 +11,7 @@ const FilteredSong = ({ curSongsData }) => {
         <Card
           key={data.id}
           imageSrc={data.image}
-          followersCount={data.follows}
+          likes={data.likes}
           label={data.title}
         />
       ))}
