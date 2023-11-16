@@ -8,8 +8,9 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
+
 import "./FeedBack.css";
-export default () => {
+export default ({handleClose}) => {
   return (
     <form>
       <Card sx={{ width: "526px", height: "524px", margin: "auto" , marginBottom:"10px"}}>
@@ -23,8 +24,8 @@ export default () => {
             >
               Feedback
             </Typography>
-            <IconButton aria-label="close" className="black-icon">
-              <CloseIcon />
+            <IconButton aria-label="close"  onClick={handleClose}>
+              <CloseIcon sx={{color:'black'}} />
             </IconButton>
           </div>
 

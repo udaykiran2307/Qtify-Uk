@@ -1,0 +1,31 @@
+.albumPhoto{
+    width:154px;
+    height:64px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.grid{
+    color:white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+
+.grid-cont{
+    padding:10px 32px;
+}
+
+.album-img{
+    width:59px;
+    height:64px;
+}
+
+.item-2{
+    text-align: center;
+}
+
+.item-3{
+    text-align: end;
+}

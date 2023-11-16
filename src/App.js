@@ -7,8 +7,14 @@ import HeroSection from "./Components/HeroCard";
 import CardSection from "./Components/Card-Section";
 import SongSection from "./Components/SongSection";
 import FaqSection from "./Components/FAQ"
-import Carousel from "./Components/Carousels"
 import FeedBack from "./Components/FeedBack"
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import SongRow from './Components/SongRow'
+import SongTable from "./Components/SongTable"
+import Pagination from '@mui/material/Pagination';
+
+
+
 
 
 const QTIFY_URL = "https://qtify-backend-labs.crio.do";
@@ -29,17 +35,30 @@ function App() {
     }); 
   },[]);
 
-  
+  // <Navbar />
+  // <HeroSection />
+  // <CardSection cardData={topAlbums} album={"Top Albums"} />
+  // <CardSection cardData={newAlbums} album={"New Albums"} />
+  // <SongSection/>
+  // <FaqSection/>
+  // <FeedBack/>
 
   return (
     <div>
-      <Navbar />
-      <HeroSection />
-      <CardSection cardData={topAlbums} album={"Top Albums"} />
-      <CardSection cardData={newAlbums} album={"New Albums"} />
-      <SongSection/>
-      <FaqSection/>
-      <FeedBack/>
+     <SongTable />
+     <Pagination count={10} className='page'/>
+     <SongRow title='Title' artist='Artist' duration='Duration'/>
+     <SongRow/>
+     <SongRow/>
+     <SongRow/>
+     <SongRow/>
+     <SongRow/>
+     <SongRow/>
+     <SongRow/>
+     <SongRow/>
+     <SongRow/>
+
+     
     </div>
   );
 }

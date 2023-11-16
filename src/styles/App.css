@@ -1,1 +1,9 @@
-
+.page{
+    color:white !important;
+    display: flex;
+    justify-content: end;
+}
+.css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root{
+    color:white !important;
+    
+}
