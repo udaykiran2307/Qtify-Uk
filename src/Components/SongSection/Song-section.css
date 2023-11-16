@@ -23,3 +23,15 @@
     gap:42px;  
     margin-top:1rem;
 }
+
+.css-1q2h7u5.Mui-selected {
+    color: var(--css-primary)!important;
+}
+
+.css-1q2h7u5{
+    color:var(--css-white)!important;
+}
+
+.css-ttwr4n{
+    background-color:var(--css-primary)!important;
+}

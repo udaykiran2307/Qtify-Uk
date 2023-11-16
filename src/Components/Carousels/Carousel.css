@@ -2,10 +2,10 @@
 .swiper-button-prev, .swiper-button-next,.next{
     background-color: var(--css-primary) !important;
     border-radius:50% !important;
-    --swiper-navigation-size: 20px !important;
+    --swiper-navigation-size: 10px !important;
     --swiper-theme-color: var(--css-white)!important;
-    width:24px !important;
-    height:24px !important;
+    width:20px !important;
+    height:20px !important;
 }
 .swiper-button-next, .swiper-rtl .swiper-button-prev {
     right: var(--swiper-navigation-sides-offset, 1px) !important;

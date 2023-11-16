@@ -16,7 +16,7 @@ const Carousel = ({ data, type }) => {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
+      spaceBetween={30}
       slidesPerView={7}
       navigation
       onSwiper={(swiper) => console.log(swiper)}
