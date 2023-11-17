@@ -10,6 +10,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { IoShuffleOutline } from "react-icons/io5";
 import LibraryAddIcon from '@mui/icons-material/LibraryAdd';
+
 const ImgMediaCard = () => {
   return (
     <Card
@@ -23,6 +24,8 @@ const ImgMediaCard = () => {
         margin: "auto",
       }}
     >
+
+     
       <CardMedia
         component="img"
         alt="green iguana"
