@@ -1,32 +1,59 @@
-.albumPhoto{
-    width:154px;
-    height:64px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+.albumPhoto {
+  width: 154px;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.grid{
-    color:white;
+.grid {
+  color: white;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.grid-cont {
+  padding: 10px 32px;
+  width: 100%;
+}
+
+.album-img {
+  width: 59px;
+  height: 48px;
+  overflow: hidden;
+  object-fit: cover;
+  flex: 2;
+  margin-right: 10px;
+}
+
+.item-2 {
+  text-align: center;
+  min-width: 100px;
+}
+
+.item-3 {
+  text-align: end;
+}
+
+.album-txt {
+  min-width: 100px;
+  flex: 1;
+}
+
+.pagination{
+    color:var(--css-primary);
     display: flex;
     justify-content: end;
-    align-items: center;
-    
+    margin-top:2rem;
+    margin-bottom:1rem;
 }
 
-.grid-cont{
-    padding:10px 32px;
-    width:100%;
+.css-hnd4u0-MuiButtonBase-root-MuiPaginationItem-root{
+    color:var(--css-white)!important;
 }
-
-.album-img{
-    width:59px;
-    height:64px;
+.css-1hfyor7-MuiPaginationItem-root{
+    color:var(--css-white)!important;
 }
-
-.item-2{
-    text-align: center;
-}
-
-.item-3{
-    text-align: end;
+.css-hnd4u0-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected{
+    background-color: var(--css-primary)!important;
 }

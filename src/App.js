@@ -9,11 +9,11 @@ import CurrentAlbum from "./Pages/CurrentAlbum/currentAlbum";
 function App() {
   return (
     <div>
-      <Navbar />
+      <Navbar image={'logo.png'} />
       <Router>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/music/:albumId" element={<CurrentAlbum />} />
+          <Route exact path="/music/:albumId" element={<CurrentAlbum />} />
         </Routes>
       </Router>
     </div>

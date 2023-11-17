@@ -29,6 +29,7 @@ const Carousel = ({ data, type }) => {
             imageSrc={item.image}
             likes={item.likes} 
             label={item.title}
+            
           />
         </SwiperSlide>)):
         data.map((item) => (
@@ -38,6 +39,7 @@ const Carousel = ({ data, type }) => {
            imageSrc={item.image}
            followersCount={item.follows}
            label={item.title}
+           slug ={item.slug}
          />
        </SwiperSlide>
 
