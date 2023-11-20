@@ -27,7 +27,7 @@ export default ({ title, artist, duration, image }) => {
             <div>{duration}</div>
           </Grid>
         </Grid>
-        <hr />
+        
       </div>
     );
   }

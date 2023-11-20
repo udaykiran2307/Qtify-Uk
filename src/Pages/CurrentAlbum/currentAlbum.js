@@ -43,6 +43,7 @@ const CurrentAlbum = () => {
         className="pagination"
         size='small'
       />
+      <SongRow title={'Title'} artist={'Artist'} duration={'Duration'} />
       {curPageData.map((data) => (
         <SongRow
           key={data.id}

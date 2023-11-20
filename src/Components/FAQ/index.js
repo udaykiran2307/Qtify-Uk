@@ -9,7 +9,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 function BasicAccordion() {
   return (
-    <div>
+    <div className="faq-container">
       <Accordion
         sx={{
           border: "2px ",

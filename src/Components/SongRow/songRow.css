@@ -10,6 +10,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
+  min-width:200px;
 }
 
 .grid-cont {
@@ -22,7 +23,7 @@
   height: 48px;
   overflow: hidden;
   object-fit: cover;
-  flex: 2;
+  flex: 1;
   margin-right: 10px;
 }
 
@@ -37,7 +38,8 @@
 
 .album-txt {
   min-width: 100px;
-  flex: 1;
+  flex: 2;
+  /* min-height: 100px; */
 }
 
 .pagination{
