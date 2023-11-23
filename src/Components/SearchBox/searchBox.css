@@ -1,0 +1,12 @@
+@media (max-width : 800px){
+    .searchbox{
+      width:5rem !important;
+      margin-left: 1rem;
+      padding: 100px;
+    }
+
+    .icon-btn{
+        width:2rem !important;
+    }
+ }
+

@@ -24,6 +24,7 @@ export default function MediaControlCard() {
         height: "250px",
         width: "98.5vw",
         alignItems: "start",
+        margin:"1rem"
       }}
       className="musicplayer"
     >

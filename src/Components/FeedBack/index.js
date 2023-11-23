@@ -13,7 +13,7 @@ import "./FeedBack.css";
 export default ({handleClose}) => {
   return (
     <form>
-      <Card sx={{ width: "526px", height: "524px", margin: "auto" , marginBottom:"10px"}}>
+      <Card sx={{ width: "36.5vw", height: "500px", margin: "auto" , marginBottom:"10px"}}>
         <CardContent>
           <div className="feedback-head">
             <Typography
@@ -34,19 +34,19 @@ export default ({handleClose}) => {
               id="outlined-basic"
               label="Fullname"
               variant="outlined"
-              sx={{ width: "362px", height: "70px" }}
+              sx={{ width: "25vw", height: "70px" }}
             />
             <TextField
               id="outlined-basic"
               label="Email"
               variant="outlined"
-              sx={{ width: "362px", height: "70px" }}
+              sx={{ width: "25vw", height: "70px" }}
             />
             <TextField
               id="outlined-basic"
               label="Subject"
               variant="outlined"
-              sx={{ width: "362px", height: "70px" }}
+              sx={{ width: "25vw", height: "70px" }}
             />
             <TextField
               id="outlined-multiline-static"
@@ -54,7 +54,7 @@ export default ({handleClose}) => {
               multiline
               rows={4}
               defaultValue=""
-              sx={{ width: "362px", height: "70px" }}
+              sx={{ width: "25vw", height: "70px" }}
             />
           </div>
         </CardContent>
@@ -63,10 +63,10 @@ export default ({handleClose}) => {
           sx={{
             display: "flex",
             justifyContent: "center",
-            marginTop:"4rem"
+            marginTop:"1rem",
           }}
         >
-          <Button size="small" variant="contained" className="btn-submit" sx={{textTransform: "none",}}>
+          <Button size="large" variant="contained" className="btn-submit" sx={{textTransform: "none",padding:'30px',width:'2rem'}}>
             Submit Feedback
           </Button>
         </CardActions>

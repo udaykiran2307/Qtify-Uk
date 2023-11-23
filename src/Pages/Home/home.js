@@ -7,6 +7,7 @@ import CardSection from "../../Components/Card-Section";
 import SongSection from "../../Components/SongSection";
 import FaqSection from "../../Components/FAQ";
 import MusicPlayer from "../../Components/MusicPlayer"
+import DropDown from "../../Components/DropDown";
 
 
 const QTIFY_URL = "https://qtify-backend-labs.crio.do";
@@ -32,6 +33,7 @@ const Home = () => {
       <SongSection />
       <FaqSection />
       <MusicPlayer/>
+      {/* <DropDown/> */}
     </div>
   );
 };

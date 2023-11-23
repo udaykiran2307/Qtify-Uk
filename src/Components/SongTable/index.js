@@ -12,7 +12,8 @@ import { IoShuffleOutline } from "react-icons/io5";
 import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
 import IconButton from "@mui/material/IconButton";
 import { useNavigate } from 'react-router-dom';
-const ImgMediaCard = () => {
+export default ({albumData}) => {
+  console.log("album Data",albumData);
   const navigate = useNavigate();
   const goNext = () => {
     navigate("/");
@@ -37,7 +38,7 @@ const ImgMediaCard = () => {
           component="img"
           alt="green iguana"
           sx={{ height: "300px", width: "288px", borderRadius: "10px" }}
-          image="https://images.unsplash.com/photo-1700021654526-4d6c6ebdc5c3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          image={albumData.image}
         />
         <CardContent sx={{ color: "white" }}>
           <Typography
@@ -46,7 +47,7 @@ const ImgMediaCard = () => {
             component="div"
             maxWidth="661px"
           >
-            Best of Punjabi Bae in 2022
+            {albumData.title}
           </Typography>
           <Typography
             variant="body"
@@ -54,7 +55,7 @@ const ImgMediaCard = () => {
             maxWidth="600px"
             sx={{ marginBottom: "1rem", marginY: "10px" }}
           >
-            Catch the most romantic punjabi tracks of 2022
+            {albumData.description}
           </Typography>
           <Typography
             variant="body"
@@ -68,14 +69,14 @@ const ImgMediaCard = () => {
           <Typography
             variant="body"
             color="white"
-            maxWidth="300px"
+            maxWidth="600px"
             sx={{
               display: "flex",
               justifyContent: "space-between",
               marginY: "10px",
             }}
           >
-            75 songs <li>3 hr 45 min </li> <li>100 Follows</li>
+          {100} songs | 3 hr 45 min | {albumData.follows} Follows | 
           </Typography>
 
           <Button
@@ -107,10 +108,4 @@ const ImgMediaCard = () => {
   );
 };
 
-export default () => {
-  return (
-    <div>
-      <ImgMediaCard />
-    </div>
-  );
-};
+

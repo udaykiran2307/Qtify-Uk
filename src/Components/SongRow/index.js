@@ -2,6 +2,7 @@
 import Grid from "@mui/material/Grid";
 import "./songRow.css";
 import { useEffect, useState } from "react";
+import Typography from "@mui/material/Typography";
 export default ({ title, artist, duration, image }) => {
   const [timeInSec, setTimeInSec] = useState(0);
   useEffect(() => {
@@ -19,15 +20,17 @@ export default ({ title, artist, duration, image }) => {
             <div className="albumPhoto">
               <div>{title}</div>
             </div>
+            {/* <Typography>{title}</Typography> */}
           </Grid>
           <Grid item xs={4} className="item-2">
             <div>{artist}</div>
+            {/* <Typography>{artist}</Typography> */}
           </Grid>
           <Grid item xs={4} className="item-3">
             <div>{duration}</div>
+            {/* <Typography>{duration}</Typography> */}
           </Grid>
         </Grid>
-        
       </div>
     );
   }
@@ -37,17 +40,19 @@ export default ({ title, artist, duration, image }) => {
         <Grid item xs={4} lg={4}>
           <div className="albumPhoto item">
             <img src={image} alt="no-img" className="album-img"></img>
-            <div className="album-txt">{title}</div>
+            {/* <div className="album-txt">{title}</div> */}
+            <Typography>{title}</Typography>
           </div>
         </Grid>
         <Grid item xs={4} lg={4} className="item-2">
-          <div>{artist}</div>
+          {/* <div>{artist}</div> */}
+          <Typography>{artist}</Typography>
         </Grid>
         <Grid item xs={4} lg={4} className="item-3">
-          <div>{timeInSec}sec</div>
+          {/* <div>{timeInSec}sec</div> */}
+          <Typography>{timeInSec}sec</Typography>
         </Grid>
       </Grid>
-      <hr />
     </div>
   );
 };

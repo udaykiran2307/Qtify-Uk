@@ -11,14 +11,20 @@ const QTIFY_URL = "https://qtify-backend-labs.crio.do";
 const CurrentAlbum = () => {
   const { albumId } = useParams();
   console.log(albumId);
+  const[albumData,setAlbumData]=useState([]);
   const [slugData, setSlugData] = useState([]);
   const[curPageData,setCurPageData] = useState([]);
   useEffect(() => {
     axios.get(`${QTIFY_URL}/album/${albumId}`).then(({ data }) => {
-      setSlugData(data.songs);
+      console.log(data);
+      setSlugData(data.songs,"data",data);
       setCurPageData(data.songs.splice(0,10));
+      setAlbumData(data);
+      console.log('uday');
+      console.log("data",data);
       console.log("slugdata", data.songs);
       console.log("img", data.image);
+      
     });
   }, []);
 
@@ -33,7 +39,7 @@ const CurrentAlbum = () => {
 
   return (
     <div>
-      <SongTable />
+      <SongTable albumData={albumData} />
       <Pagination
         count={Math.ceil(slugData.length/10)}
         page={page}

@@ -17,7 +17,7 @@ function BasicAccordion() {
           padding: "2px",
           marginBottom: "1rem",
           borderRadius: "8px",
-          width: "1113px",
+          width: "90vw",
         }}
       >
         <AccordionSummary
@@ -31,7 +31,7 @@ function BasicAccordion() {
             borderRadius: "8px",
           }}
         >
-          <Typography>Is QTify free to use?</Typography>
+          <Typography >Is QTify free to use?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>Yes! It is 100% free, and has 0% ads!</Typography>
@@ -45,6 +45,7 @@ function BasicAccordion() {
           padding: "2px",
           marginBottom: "1rem",
           borderRadius: "8px",
+          width: "90vw"
         }}
       >
         <AccordionSummary

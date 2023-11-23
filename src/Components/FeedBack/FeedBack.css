@@ -1,39 +1,34 @@
-.feedback-head{
-     display: flex;
-     justify-content: space-between;
-     align-items: start;
-     color:black;
-     border-radius: 10px;
-    
+.feedback-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  color: black;
+  border-radius: 10px;
 }
 
-
-
-
-.btn-submit{
-    height: 53px;
-    width:192px;
-    font-size: larger;
-    font:700;
-    background-color: var(--css-primary)!important;
-    color:var(--css-white) !important;
-    /* display: flex;
+.btn-submit {
+  max-height: 0.5rem !important;
+  min-width: 12rem !important;
+  font-size: larger;
+  font: 700;
+  background-color: var(--css-primary) !important;
+  color: var(--css-white) !important;
+  /* display: flex;
     justify-content: center; */
 }
 
-.input-section{
-    display : flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
-.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input{
-    
-    border: 2px solid var(--css-primary)!important;
-    border-radius:10px!important;
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  border: 2px solid var(--css-primary) !important;
+  border-radius: 10px !important;
 }
 
-.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root{
-    border: 2px solid var(--css-primary)!important;
+.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
+  border: 2px solid var(--css-primary) !important;
 }
