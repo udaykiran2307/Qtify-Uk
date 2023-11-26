@@ -1,8 +1,18 @@
 /* eslint-disable import/no-anonymous-default-export */
 import { GrSearch} from 'react-icons/gr';
 import './searchBox.css'
-export default  () => {
+import { useState,useEffect } from 'react';
+import SearchDrop from '../SearchDrop';
+export default  ({allData}) => {
+    const [searchValue,setSearchValue]  = useState("");
+    const [filteredData , setFilteredData] = useState("");
+    const updateSearchValue = (event) => {
+        setSearchValue(event.target.value);
+        const newData = allData.filter((data)=>data.title.toLowerCase().includes(searchValue));
+        setFilteredData(newData);
+    }
     return(
+        <div className='searchbox-section'>
         <form style={{
             display:'flex',
             minWidth:'40vw'
@@ -16,6 +26,8 @@ export default  () => {
                 padding:'0.5rem',
                 backgroundColor: 'white'
             }}
+            value={searchValue}
+            onChange={updateSearchValue}
             ></input>
             <button
              style={{
@@ -31,5 +43,7 @@ export default  () => {
             ><GrSearch/>
             </button>
         </form>
+       { filteredData  && searchValue && <SearchDrop albumData={filteredData}/>}
+        </div>
     );
   };

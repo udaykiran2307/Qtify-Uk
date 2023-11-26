@@ -20,11 +20,6 @@ const CurrentAlbum = () => {
       setSlugData(data.songs,"data",data);
       setCurPageData(data.songs.splice(0,10));
       setAlbumData(data);
-      console.log('uday');
-      console.log("data",data);
-      console.log("slugdata", data.songs);
-      console.log("img", data.image);
-      
     });
   }, []);
 

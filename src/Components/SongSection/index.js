@@ -8,14 +8,6 @@ import Carousel from "../Carousels"
 const FilteredSong = ({ curSongsData }) => {
   return (
     <div className="filtered-song-section">
-      {/* {curSongsData.map((data) => (
-        <Card
-          key={data.id}
-          imageSrc={data.image}
-          likes={data.likes}
-          label={data.title}
-        />
-      ))} */}
         <Carousel data={curSongsData} type={'songs'}/>
     </div>
   );
