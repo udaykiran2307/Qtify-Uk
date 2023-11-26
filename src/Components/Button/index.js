@@ -1,22 +1,19 @@
 /* eslint-disable import/no-anonymous-default-export */
 import "./button.css";
 import * as React from "react";
-import Button from "@mui/material/Button";
-import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
-import DialogTitle from "@mui/material/DialogTitle";
-import FeedBack from "../FeedBack/index"
 
+import Dialog from "@mui/material/Dialog";
+
+import DialogContent from "@mui/material/DialogContent";
+
+import FeedBack from "../FeedBack/index";
 
 // export default ({ children,handleClickOpen }) => {
-  
+
 //   return ;
 // };
 
-
-export default ({children}) => {
+export default ({ children }) => {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -29,7 +26,9 @@ export default ({children}) => {
 
   return (
     <React.Fragment>
-     <button className="button" onClick = {handleClickOpen}>{children}</button>
+      <button className="button" onClick={handleClickOpen}>
+        {children}
+      </button>
       <Dialog
         open={open}
         onClose={handleClose}
@@ -37,9 +36,9 @@ export default ({children}) => {
         aria-describedby="alert-dialog-description"
       >
         <DialogContent>
-          <FeedBack handleClose = {handleClose}/>
+          <FeedBack handleClose={handleClose} />
         </DialogContent>
       </Dialog>
     </React.Fragment>
   );
-}
+};

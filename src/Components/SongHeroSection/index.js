@@ -38,7 +38,6 @@ export default () => {
 
   useEffect(() => {
     FilteredData();
-    console.log(curSongsData);
   }, [value]);
 
   useEffect(() => {

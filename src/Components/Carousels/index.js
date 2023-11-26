@@ -19,13 +19,11 @@ const Carousel = ({ data, type }) => {
       spaceBetween={30}
       slidesPerView={7}
       navigation
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
     >
-      { type ==='songs' ? data.map((item) => (
+      { type ==='songs' ? data.map((item,i) => (
         <SwiperSlide key={item.id}>
           <Card
-            key={item.id}
+            key={i}
             imageSrc={item.image}
             likes={item.likes} 
             label={item.title}

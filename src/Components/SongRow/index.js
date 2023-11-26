@@ -12,7 +12,6 @@ export default ({ title, artist, duration, image }) => {
   }, []);
 
   if (title === "Title") {
-    console.log(title);
     return (
       <div className="grid-cont">
         <Grid container spacing={2} className="grid">

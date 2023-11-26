@@ -3,7 +3,7 @@ import SongRow from "../../Components/SongRow";
 import SongTable from "../../Components/SongTable";
 import Pagination from "@mui/material/Pagination";
 import { useParams } from "react-router-dom";
-import Navbar from "../../Components/Navbar";
+
 import { useState, useEffect } from "react";
 import axios from "axios";
 
@@ -16,8 +16,7 @@ const CurrentAlbum = () => {
   const[curPageData,setCurPageData] = useState([]);
   useEffect(() => {
     axios.get(`${QTIFY_URL}/album/${albumId}`).then(({ data }) => {
-      console.log(data);
-      setSlugData(data.songs,"data",data);
+      setSlugData(data.songs);
       setCurPageData(data.songs.splice(0,10));
       setAlbumData(data);
     });

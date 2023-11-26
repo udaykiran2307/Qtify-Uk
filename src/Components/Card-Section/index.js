@@ -26,9 +26,9 @@ export default ({ cardData, album }) => {
       </div>
       <div className="card-section">
         {buttonStatus ? (
-          cardData.map((data) => (
+          cardData.map((data,idx) => (
             <Card
-              key={data.id}
+              key={idx}
               imageSrc={data.image}
               followersCount={data.follows}
               label={data.title}

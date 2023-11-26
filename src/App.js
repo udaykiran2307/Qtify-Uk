@@ -14,7 +14,6 @@ function App() {
   const [albumData, setAlbumData] = useState([]);
   useEffect(() => {
     axios.get(`${QTIFY_URL}/albums/top`).then(({ data }) => {
-      console.log('fromApp',data);
       setAlbumData(data);
     });
   }, []);

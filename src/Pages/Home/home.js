@@ -4,7 +4,7 @@ import axios from "axios";
 // import "../styles/App.css";
 import HeroSection from "../../Components/HeroCard";
 import CardSection from "../../Components/Card-Section";
-import SongSection from "../../Components/SongSection";
+import SongSection from "../../Components/SongHeroSection";
 import FaqSection from "../../Components/FAQ";
 import MusicPlayer from "../../Components/MusicPlayer";
 
@@ -17,7 +17,6 @@ const Home = () => {
   
   useEffect(() => {
     axios.get(`${QTIFY_URL}/albums/top`).then(({ data }) => {
-      console.log(data);
       setTopAlbums(data);
     });
     axios.get(`${QTIFY_URL}/albums/new`).then(({ data }) => {
